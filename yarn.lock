@@ -906,7 +906,12 @@
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.10.tgz#4897974cc317bf99d4fe6af1efa15957fa9c94de"
   integrity sha512-DC8xTuW/6TYgvEg3HEXS7cu9OijFqprVDXXiOcdOKZCU/5PJNLZU37VVvmZHdtMiGOa8wAA/We+JzbdxFzQTRQ==
 
-"@types/node@10.12.18":
+"@types/lodash@^4.14.119":
+  version "4.14.119"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.119.tgz#be847e5f4bc3e35e46d041c394ead8b603ad8b39"
+  integrity sha512-Z3TNyBL8Vd/M9D9Ms2S3LmFq2sSMzahodD6rCS9V2N44HUMINb75jNkSuwAx7eo2ufqTdfOdtGQpNbieUjPQmw==
+
+"@types/node@10.12.18", "@types/node@^10.12.18":
   version "10.12.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
@@ -4113,8 +4118,10 @@ gh-pages@^2.0.1:
 
 "github-actions-validator@https://github.com/Feridum/github-actions-validator":
   version "0.0.1"
-  resolved "https://github.com/Feridum/github-actions-validator#096444679e40a8dcc488965d90fea3b81a079e81"
+  resolved "https://github.com/Feridum/github-actions-validator#b43cdbb53dcdb2f17157ec82ef402ef48ada2aef"
   dependencies:
+    "@types/lodash" "^4.14.119"
+    "@types/node" "^10.12.18"
     lodash "^4.17.11"
 
 glob-base@^0.3.0:

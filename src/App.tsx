@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-const {isWorkflowValid} = require('github-actions-validator/src');
+import {isWorkflowValid} from 'github-actions-validator'
 
 class App extends Component {
   state = {
@@ -21,6 +21,8 @@ class App extends Component {
   }
 
   checkIfWorkflowIsValid = () => {
+    // console.log(isWorkflowValid(this.state.workflowValue));
+    
     this.setState({
       workflowValid: isWorkflowValid(this.state.workflowValue),
       checkWorkflow: false
@@ -40,6 +42,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(isWorkflowValid)
     return (
       <div className="grid-container">
         <div className="header"><h1>Github Actions Validator Demo</h1></div>
